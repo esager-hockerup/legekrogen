@@ -1,0 +1,168 @@
+/* Overordnet styling for formularens container */
+.formular {
+    position: relative; 
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden; 
+    z-index: 1;
+}
+
+/* Baggrundsbillede for formularen */
+.form-back{
+    position: relative;
+    z-index: 0;
+    width: auto ;
+    height: 1000px;
+    object-fit: fill;
+}
+
+/* Overlay til at give en mørk effekt på baggrundsbilledet */
+.overlay-form{
+    background-color:#355674B3 ;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top:0%;
+    z-index: 2;
+}
+
+/* Tekstindhold for formularen */
+.formular-txt{
+    z-index: 3;
+    position: absolute;
+    top: 23%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Stil for almindelig tekst i formularen */
+.form-txt {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Stil for klubteksten */
+.club-txt {
+    font-size: 65px;
+    font-family: 'Square Peg', cursive;
+    font-weight: 100; 
+    letter-spacing: 3px;   
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Stil for formularen og dens position */
+#become-member{
+    position: absolute;
+    top: 66%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 5;
+}
+
+/* Generel stil for inputfelter */
+input {
+    display: block;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 40px;
+    border-radius: 25px; 
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+/* Stil for placeholder-tekst i inputfelter */
+::placeholder {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+}
+
+/* Generel stil for tekstområder */
+textarea{
+    display: block;
+    margin-bottom: 15px;
+    width: 300px;
+    border-radius: 25px; 
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+/* Stil for indsend-knap */
+.submit {
+    border: none;
+    background-color: #9478A7;
+    color: #F5EEE5;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight:300;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-top: 25px;
+}
+
+/* Hover-effekt for indsend-knap */
+.submit:hover {
+    background-color: #C1ADCE;
+}
+
+/* Klasse for skjulte elementer */
+.hidden {
+    display: none;
+}
+
+/* Beskedområde efter indsendelse af formularen */
+.msg {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    color:#FFFFFF;
+    margin: 30px;
+    top: 35%;
+    position: absolute;
+    z-index: 5;
+}
+
+/* Media Query for skærmstørrelser over 800px */
+@media only screen and (min-width: 800px) {
+    /* Justering af baggrundsbilledet */
+    .form-back{
+        width: 100% ;
+        height: 1000px;
+        object-fit: cover;
+    }
+    /* Justering af bredden på klubteksten */
+    .club-txt {
+        max-width: 1366px;
+    }
+    /* Justering af positionen for indsend-knap */
+    #become-member{
+        top: 63%; 
+    }
+    /* Ændring af bredden på inputfelter */
+    input {
+        width: 500px;
+        height: 50px;
+    }
+    /* Ændring af bredden på tekstområdet */
+    textarea{
+        width: 500px;
+    }
+    /* Justering af beskedområdets størrelse og position */
+    .msg {
+        max-width: 1366px;
+        font-size: 17px;
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+    }
+}

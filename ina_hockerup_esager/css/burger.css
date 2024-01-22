@@ -1,0 +1,149 @@
+.topbar{
+    background-color:#D7E6EC;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.truck-icon{
+    height: 10px;
+    margin-right: 10px;
+}
+
+.topbar-txt{
+    font-size: 10px;
+    color: #355674;
+}
+
+/* TOPBAR END */
+
+
+header{
+    background-color: #355674 ;
+    height: 80px;
+}
+
+/* Top-bredde defineres */
+
+.menu-nav{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Flex - Space-between */
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo styling */
+
+.logo {
+    width: 120px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+/* menu-styling */
+
+.nav-ul{
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    font-size: 1.2rem;
+    list-style-type: none; 
+}
+   /* js aktiveres. styling af baggrung for dropdown menu */
+
+.nav-ul.show {
+    display: flex;
+    background-color: #355674;
+    padding: 16px;
+    height: 100vh;
+    width: 100%;
+    margin-top: -79px;
+    align-items: center;
+    line-height: 50px;
+    z-index: 5;
+    justify-content: center;
+}
+
+.nav-txt {
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-size:18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px;   
+}
+
+/* burgermenu */
+
+.hamburger{
+    border: 0;
+    display: block;
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 25px;
+    margin-right: 15px;
+    margin-top: 13px;    
+    cursor: pointer;
+}
+
+/* responsiv navigation for desktop */
+@media screen and (min-width: 800px) {
+
+    .topbar{
+        height: 25px;
+    }
+    .truck-icon{
+        height: 15px;
+        margin-right: 10px;
+    }
+    
+    .topbar-txt{
+        font-size: 12px;
+    }
+
+    header{
+        height: 100px;
+    }
+  
+    .menu-nav{
+        width: 1366px;
+    }
+
+    .nav-ul {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .logo{
+       width: 150px;
+       height: auto;
+    }
+
+    .nav-txt {
+      color: white; 
+      font-weight: 300; 
+    }
+
+    li{
+        padding: 0;
+        margin-left: 50px;
+    }
+
+    a:hover{
+        color:#C1ADCE ;
+    }
+
+    .hamburger{
+        display: none;
+    }
+}   

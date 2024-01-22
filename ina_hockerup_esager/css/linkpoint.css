@@ -1,0 +1,48 @@
+
+.linkpoint{
+    background-color: #355674;
+
+}
+
+.CTA-front{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+}
+
+.link-head{
+    font-family: 'Square Peg', cursive;
+    color: white;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.link-btn{
+    background-color: #9478A7;
+    color: white;
+    width: 200px;
+    height: 30px;
+    border-radius: 25px;
+    border: 0px;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+@media only screen and (min-width: 800px){
+    
+    
+    .linkpoint{
+        width: 1366px ;
+        margin: auto;
+    }  
+    
+    .CTA-front{
+      
+        margin-top: 20%;
+    }
+
+}

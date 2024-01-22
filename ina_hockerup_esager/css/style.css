@@ -1,0 +1,28 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* DESING AF TOPBAR */
+
+body{
+    background-color: #C1ADCE;
+}
+
+p, h3{
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+
+
+
+h2 {
+    font-size: clamp(25px, 5vw, 40px); /* clamp() sørger for at teksten er responsive */
+    color: white;
+}
+
+
+
+
+

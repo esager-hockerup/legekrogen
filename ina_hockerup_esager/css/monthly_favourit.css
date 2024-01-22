@@ -1,0 +1,183 @@
+.product-focus{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.month-txt{
+    text-align: center;    
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.h2-month{
+    font-weight: 100;
+    text-align: center;
+    font-size: 40px ;
+    letter-spacing: 2px ;
+    font-family: 'Square Peg', cursive;
+    color: #355674;
+    margin-top: 140px;
+}
+    
+.txt-month{
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight:100;
+    color: #355674;
+    margin-bottom: 10px;
+}
+
+.stars{
+text-align: center;
+}
+
+.star-icon{
+    height: 20px;
+    width: 20px;
+}
+
+.month-img{
+    height: auto;
+    width: 330px;
+}
+
+.month-info{
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 40px;
+}
+
+.dino-brand {
+    font-size: 18px;
+    font-weight: 100;
+    color: #355674;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dino-pro{
+    font-size: 18px;
+    color: #355674;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.dino-price{
+    font-size: 26px;
+    color: #355674;
+    text-align: center;
+}
+
+.btn-month{
+    background-color: #9478A7;
+    font-size: 14px;
+    width: 330px;
+    height: 40px;
+    border: 0;
+    border-radius: 25px;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.CTA-month{
+    margin-bottom: 70px;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#F3F8F9;
+    width: 100%;
+}
+
+.review{
+    text-align: center;
+    margin: 60px;
+}
+
+.rev-head{
+    font-family: 'Quicksand', sans-serif;
+    color: #355674;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.rev-con{
+    color: #355674;
+    font-family: 'Square Peg', cursive;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+@media only screen and (min-width: 800px){
+
+    .product-focus {
+        max-width: 1366px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+       margin: auto;
+       margin-bottom: 60px;
+    }
+    
+    .horse {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .month-pic,
+    .month-info,
+    .CTA-month,
+    .reviews {
+        width: 100%;
+        margin-bottom: 0; 
+    }
+    
+    .h2-month{
+        margin-top: 70px;
+    }
+        
+    .txt-month{
+        margin-bottom: 5px;
+    }
+    
+    .stars{
+        margin-top: 0px;
+    }
+    
+    .dino-brand {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .dino-pro{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .dino-price{
+        font-size: 29px;
+        margin-bottom: 20px;
+    }
+    
+    .CTA-month{
+        margin-bottom: 70px;
+    }
+    
+    .review {
+        padding: 30px;
+    }
+}
+

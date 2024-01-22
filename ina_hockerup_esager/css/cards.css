@@ -1,0 +1,141 @@
+
+.product-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.h2-pro{
+    font-weight: 100;
+    font-size: 40px ;
+    letter-spacing: 2px ;
+    font-family: 'Square Peg', cursive;
+}
+
+.txt-pro{
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight:100;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 1frpx;
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    background-color: #C1ADCE ;
+    margin: 25px;
+}
+
+.item {
+    border-radius: 25px;
+    background-color:#9478A7;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+}
+
+.product-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px 25px 0 0;
+}
+
+.product-img:hover{
+    opacity: .7;}
+
+.brand-txt{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product-txt{
+font-weight: 400;
+margin-left: 20px;
+}
+
+.price-txt{
+    font-size: 26px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.bagde{
+    background-color: #D7E6EC;
+    border-radius: 100px;
+    width: 90px;
+    height: 90px;
+
+    
+}
+.badge-form{
+    position: absolute;
+    left: 250px;
+    margin-top: 20px;
+    
+
+}
+
+.badge-txt{
+    text-align: center;
+    font-family: 'Square Peg', cursive;
+    font-size: 45px;
+    padding: 15px;
+    color: #355674;
+}
+
+.CTA-toys{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.btn-toys{
+    background-color: transparent;
+    width: 330px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 25px;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+/* responsiv navigation for desktop */
+@media screen and (min-width: 376px) {
+
+.badge-form{
+    display: none;
+}
+}
+
+
+@media screen and (min-width: 1300px) {
+.products{
+    max-width: 1366px;
+    margin: auto;
+    grid-column-gap: 40px;
+    margin-bottom: 70px;
+    margin-top: 50px;
+}
+
+.btn-toys{
+    width: 400px;
+    height: 40px;
+}
+
+}
